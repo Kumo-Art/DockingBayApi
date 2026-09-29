@@ -9,6 +9,8 @@ Syntax Error,on line 13, needed a s on the end of Pilots in PilotsController, I 
 
 syntax error on line 10, there was a comma missing after "Iron Comet", I added the comma.
 
+Logic error on line 54, refuel was add 100 to ship.FuelPercent due to += EX. ship.FuelPercent += 100;, I removed the plus sign so that it is just equals 100.
+
 
 
 
@@ -42,9 +44,16 @@ Syntax error on line 9, the l in List should be uppercase, I changed it to be up
 
 
 
+//--------------------PilotServices Bugs--------------//
 
+Logic error on line 40, created pilot was setting hours to zero, commented out pilot.FlightHours = 0;
 
-
+Runtime error on line 50, needed an if statement to check if null, added
+if(pilot == null)
+{
+    
+    return false;
+}
 
 
 

@@ -51,7 +51,7 @@ public class ShipService : IShipService
             return false;
         }
 
-        ship.FuelPercent += 100;
+        ship.FuelPercent = 100;
         return true;
     }
 
