@@ -61,3 +61,27 @@ if(pilot == null)
 //---------------------Program.cs Bugs------------------//
 
 Runtime error on line 8, needs an AddScoped for IPilotServices and PilotServices, Changed it to reflect that
+
+
+
+
+### Reflection
+
+Answer each in 2–3 sentences at the bottom of your bug log.
+
+1. Which bug took you the longest to find? What finally led you to it? 
+- **probably the runtime errors, especially the 2 i didn't find**
+ 
+2. Pick one runtime error. What exception did it throw, and how did the message help you find the line? 
+- **The AddScoped runtime error, i don't remember the exact wording of the error but, i did go and check the program.cs file to make sure it was good**
+
+3. DELETE /api/ships/3 crashed with Collection was modified . Why can't a foreach loop keep
+going after you remove something from the list it's looping over? - **Because the number of ships changes after one is removed**
+
+4. Every /api/pilots request crashed until you fixed one line in Program.cs . What was dependency
+injection trying to do, and why did it fail? - **It was implementing IShipService and ShipService twice**
+
+5. Several logic bugs were one character, like != versus == or < versus <= . Why doesn't the compiler
+catch those? - **Because they are logic errors not runtime or syntax error**
+
+6. Some bugs hid until you fixed a different one. Give one example.-**I Can't think of one, maybe its one of the errors i didn't find**
