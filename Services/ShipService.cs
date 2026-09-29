@@ -18,6 +18,7 @@ public class ShipService : IShipService
 
     public Ship? GetById(int id)
     {
+        
         return _ships.First(s => s.Id == id);
     }
 
