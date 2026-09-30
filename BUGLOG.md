@@ -24,6 +24,8 @@ Logic error on line 37, if statement was if(ship != null) when it should have be
 
 Logic error on line 49, return type was Ok, when it should have been CreatedAtAction, I changed it to match that
 
+Logic error on line 74, HttpDelete if statement was if(!deleted) and was giving internal server error, changed if statement to if(deleted == false)
+
 
 
 //-------------Ship Model Bugs--------------//

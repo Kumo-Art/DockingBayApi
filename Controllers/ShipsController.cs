@@ -71,7 +71,7 @@ public class ShipsController : ControllerBase
     {
         bool deleted = _ships.Delete(id);
 
-        if (!deleted)
+        if (deleted == false )
         {
             return NotFound($"No ship with id {id}.");
         }
